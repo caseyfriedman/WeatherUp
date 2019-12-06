@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Assignment3</string>
+    <string name="app_name">WeatherUp</string>
+    <string name="hint">Please enter a city</string>
+    <string name="low">Low :%1$s%2$s</string>
+    <string name="high">High :%1$s%2$s</string>
+    <string name="imperial">imperial</string>
+    <string name="appid">e51537f1293f63d26aa8a5b8bd5a9b80</string>
+    <string name="url">https://api.openweathermap.org/</string>
+    <string name="fahrenheit_symbol">°F</string>
 </resources>

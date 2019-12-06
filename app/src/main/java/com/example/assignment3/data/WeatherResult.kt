@@ -2,7 +2,7 @@ package com.example.assignment3.data
 
 import java.io.Serializable
 
-data class Base(val coord: Coord?, val weather: List<Weather>?, val base: String?, val main: Main?, val visibility: Number?, val wind: Wind?, val rain: Rain?, val clouds: Clouds?, val dt: Number?, val sys: Sys?, val timezone: Number?, val id: Number?, val name: String?, val cod: Number?):Serializable
+data class Base(val coord: Coord?, val weather: List<Weather>?, val base: String?, val main: Main?, val visibility: Number?, val wind: Wind?, val rain: Rain?, val clouds: Clouds?, val dt: Number?, val sys: Sys?, val timezone: Number?, val id: Number?, val name: String?, val cod: Number?)
 
 data class Clouds(val all: Number?)
 

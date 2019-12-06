@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
 import kotlinx.android.synthetic.main.new_city_dialog.view.*
+import java.util.*
 
 class CityDialog : DialogFragment() {
     interface CityHandler {
@@ -43,7 +44,7 @@ class CityDialog : DialogFragment() {
         builder.setView(rootView)
 
 
-        builder.setPositiveButton("OK") { dialog, witch ->
+        builder.setPositiveButton("OK") { _, _ ->
             // empty
         }
 
@@ -67,8 +68,12 @@ class CityDialog : DialogFragment() {
 
     private fun handleCityCreate() {
 
-        cityHandler.cityCreated(etCityName.text.toString())
+        cityHandler.cityCreated(etCityName.text.toString().formatEachWord())
 
     }
+
+    private fun String.formatEachWord(): String =
+        toLowerCase(Locale.US).split(" ").joinToString(" ") { it.capitalize() }
+
 
 }

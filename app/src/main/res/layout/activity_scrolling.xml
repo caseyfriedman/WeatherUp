@@ -19,10 +19,16 @@
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#673AB7"
+            android:background="#896DAA"
             android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="top|center"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Large"
             app:contentScrim="@android:color/transparent"
+            app:expandedTitleGravity="bottom|center_vertical|center"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Display1"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="@string/app_name"
+            app:titleEnabled="true"
             app:toolbarId="@+id/toolbar">
 
             <androidx.appcompat.widget.Toolbar
@@ -30,7 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:title="WeatherUp" />
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>

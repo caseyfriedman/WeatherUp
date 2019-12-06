@@ -4,7 +4,10 @@
     android:layout_height="match_parent">
 
     <EditText
+        android:id="@+id/etCity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/etCity"/>
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 </LinearLayout>
